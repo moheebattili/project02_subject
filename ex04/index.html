@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Box Model: content-box vs border-box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>The CSS Box Model Math</h1>
+
+        <div class="comparison-grid">
+            <section class="box-card content-box-card">
+                <h2>content-box (Default)</h2>
+                <div class="box-dimensions">
+                    <p><strong>Declared Width:</strong> 300px</p>
+                    <p><strong>Padding:</strong> 20px (left & right = +40px)</p>
+                    <p><strong>Border:</strong> 10px (left & right = +20px)</p>
+                    <p class="rendered-total"><strong>Rendered Width:</strong> 360px</p>
+                </div>
+                <p class="explanation">Padding and borders are added <em>on top of</em> the declared width, breaking tight layout constraints.</p>
+            </section>
+
+            
+            <section class="box-card border-box-card">
+                <h2>border-box (Recommended)</h2>
+                <div class="box-dimensions">
+                    <p><strong>Declared Width:</strong> 300px</p>
+                    <p><strong>Padding:</strong> 20px (left & right = absorbed)</p>
+                    <p><strong>Border:</strong> 10px (left & right = absorbed)</p>
+                    <p class="rendered-total"><strong>Rendered Width:</strong> 300px</p>
+                </div>
+                <p class="explanation">Padding and borders are absorbed <em>inside</em> the declared width, ensuring predictable layouts.</p>
+            </section>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors & Opacity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Color Formats & Transparency Demonstration</h1>
+
+        
+        <section class="section">
+            <h2>1. Color Swatch Palette</h2>
+            <div class="palette">
+                <div class="swatch named">
+                    <p>Named</p>
+                    <span>crimson</span>
+                </div>
+                <div class="swatch hex">
+                    <p>HEX</p>
+                    <span>#2563eb</span>
+                </div>
+                <div class="swatch rgb">
+                    <p>RGB</p>
+                    <span>rgb(16, 185, 129)</span>
+                </div>
+                <div class="swatch rgba">
+                    <p>RGBA</p>
+                    <span>rgba(168, 85, 247, 0.7)</span>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="section">
+            <h2>2. Opacity vs. RGBA Comparison</h2>
+            <div class="comparison-grid">
+
+               
+                <div class="box box-opacity">
+                    <h3>opacity: 0.5</h3>
+                    <p class="text-content">Text & Background are BOTH 50% transparent.</p>
+                </div>
+
+                
+                <div class="box box-rgba">
+                    <h3>RGBA Alpha 0.5</h3>
+                    <p class="text-content">Text is 100% OPAQUE, only background is 50% transparent.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

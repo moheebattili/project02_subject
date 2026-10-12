@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: 
+        linear-gradient(45deg, #cbd5e1 25%, transparent 25%), 
+        linear-gradient(-45deg, #cbd5e1 25%, transparent 25%), 
+        linear-gradient(45deg, transparent 75%, #cbd5e1 75%), 
+        linear-gradient(-45deg, transparent 75%, #cbd5e1 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    padding: 40px 20px;
+}
+
+.container { 
+    background-image: repeating-linear-gradient(
+        45deg,
+        #cbd5e1,
+        #cbd5e1 12px,
+        #ffffff 12px,
+        #ffffff 24px
+    );
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e293b;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    color: #334155;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+}
+
+.palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.swatch {
+    flex: 1 1 calc(25% - 20px);
+    min-width: 150px;
+    height: 120px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.swatch.named {
+    background-color: crimson; 
+}
+
+.swatch.hex {
+    background-color: #2563eb; 
+}
+
+.swatch.rgb {
+    background-color: rgb(16, 185, 129); 
+}
+
+.swatch.rgba {
+    background-color: rgba(168, 85, 247, 0.7); 
+}
+
+
+.comparison-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 280px;
+    padding: 25px;
+    border-radius: 8px;
+    border: 2px solid #0f172a;
+}
+
+
+.box-opacity {
+    background-color: #0f172a;
+    color: #ffffff;
+    opacity: 0.5; 
+}
+
+
+.box-rgba {
+    background-color: rgba(15, 23, 42, 0.5); 
+    color: #0f172a;
+}
+
+.text-content {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
